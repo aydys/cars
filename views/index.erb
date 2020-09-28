@@ -1,0 +1,8 @@
+<h2>Car List</h2>
+<ul class='list-group'>
+    <% @cars.each do |car|%>
+        <li class='list-group-item'>
+            <%= "#{car.id.to_s + ') ' + car.model + ' ' + car.year_birth.to_s}" %>
+        </li>
+    <% end %>
+</ul>
