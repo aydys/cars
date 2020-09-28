@@ -13,3 +13,8 @@ end
 get '/' do
 	erb :index
 end
+
+get '/car/:id' do
+	@car = Car.find(params[:id])
+	erb :car
+end

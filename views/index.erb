@@ -2,7 +2,7 @@
 <ul class='list-group'>
     <% @cars.each do |car|%>
         <li class='list-group-item'>
-            <%= "#{car.id.to_s + ') ' + car.model + ' ' + car.year_birth.to_s}" %>
+            <a href='/car/<%= car.id %>'><%= "#{car.id.to_s + ') ' + car.model + ' ' + car.year_birth.to_s}" %></a>
         </li>
     <% end %>
 </ul>
